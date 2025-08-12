@@ -1,0 +1,156 @@
+.header-actions {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+#back-btn {
+    background: #6c757d;
+}
+
+#back-btn:hover {
+    background: #5a6268;
+}
+
+#refresh-btn {
+    background: #17a2b8;
+}
+
+#refresh-btn:hover {
+    background: #138496;
+}
+
+.loading {
+    text-align: center;
+    color: #666;
+    font-style: italic;
+}
+
+.url-item {
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.url-item:hover {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.url-name {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.url-name input {
+    flex: 1;
+    padding: 4px 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.url-original {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 8px;
+    word-break: break-all;
+}
+
+.url-short {
+    color: #007bff;
+    font-weight: bold;
+    margin-bottom: 10px;
+    word-break: break-all;
+}
+
+.url-actions {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.url-actions button {
+    padding: 6px 12px;
+    font-size: 12px;
+    border-radius: 4px;
+}
+
+.edit-btn {
+    background: #ffc107;
+    color: #212529;
+}
+
+.edit-btn:hover {
+    background: #e0a800;
+}
+
+.save-btn {
+    background: #28a745;
+}
+
+.save-btn:hover {
+    background: #218838;
+}
+
+.cancel-btn {
+    background: #6c757d;
+}
+
+.cancel-btn:hover {
+    background: #5a6268;
+}
+
+.delete-btn {
+    background: #dc3545;
+}
+
+.delete-btn:hover {
+    background: #c82333;
+}
+
+.copy-btn {
+    background: #17a2b8;
+}
+
+.copy-btn:hover {
+    background: #138496;
+}
+
+.no-urls {
+    text-align: center;
+    color: #666;
+    font-style: italic;
+    padding: 40px 20px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .header-actions {
+        flex-direction: column;
+    }
+    
+    .url-actions {
+        flex-direction: column;
+    }
+    
+    .url-actions button {
+        width: 100%;
+    }
+    
+    .url-name {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .url-name input {
+        width: 100%;
+    }
+}

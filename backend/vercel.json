@@ -12,6 +12,10 @@
       "dest": "server.js"
     },
     {
+      "src": "/manage",
+      "dest": "server.js"
+    },
+    {
       "src": "/image/(.*)",
       "dest": "server.js"
     },

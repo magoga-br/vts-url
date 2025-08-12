@@ -3,21 +3,25 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encurtador de URL</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <img class="logo" src="../image/logo.png" alt="Logo VTS URL">
+    <img class="logo" src="/image/logo.png" alt="Logo VTS URL">
     <div class="container">
-        <h2>Encurtador de URL</h2>
+        <h1>Encurtador de URL</h1>
         <form id="shorten-form">
             <input type="url" id="url-input" placeholder="Cole sua URL aqui" required>
             <button type="submit">Encurtar</button>
         </form>
         <div id="result"></div>
+
     </div>
-    <img class="logo" src="/image/logo.png" alt="Logo VTS URL">
+    <div class="manage-links">
+        <button id="manage-btn" onclick="window.location.href='/manage'">Gerenciar URLs</button>
+    </div>
     <script src="script.js"></script>
 </body>
 
